@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* font-family: 'Special Elite', cursive; */
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url('https://source.unsplash.com/1600x900/?norway');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    
+}
+
+.main{
+    background-color: rgba(31, 27, 27, 0.8);
+    border-radius: 24px;
+    color: white;
+    width: 100%;
+    max-width: 410px;
+    padding: 1rem;
+
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.search-input{
+    font-family: 'Special Elite', cursive;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: white;
+}
+.search-btn{
+    background-color: #7c7c7c2b;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+}
+.search-btn:hover{
+    animation: mymove 5s infinite;
+    color: black;
+}
+@keyframes mymove {
+    from {background-color: #EDEDED;}
+    to {background-color: #F8FFDB;}
+  }
+
+.title{
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+    margin-bottom: 1rem;
+}
+
+.temp{
+    font-size: 3rem;
+    font-family: 'Special Elite', cursive;
+    
+}
+.weather{
+    font-size: 1.2rem;
+    font-family: 'Special Elite', cursive;
+}
+.flex{
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    margin: none;
+}
+.description{
+    margin-top: 1.2rem;
+}
+.humidity{
+    margin:0.5rem;
+}
+.windspeed{
+    margin:0.5rem;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    border-radius: 24px;
+}
+    
